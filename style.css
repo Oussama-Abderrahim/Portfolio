@@ -1,0 +1,87 @@
+  body {
+      position: relative; 
+  }
+
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  font-size: 1.4em;
+}
+
+header {
+
+	color: white;
+
+	background-color: rgb(160,160,160);
+}
+#welcome-text{
+	margin : 20px auto;
+	margin-bottom: -90px;
+}
+
+.face-pic {
+	max-width: 170px;
+	min-width: 100px;
+	border : 5px white solid;
+
+	position: relative;
+
+	top : 20px;
+}
+
+#main-wrapper{
+	max-width: 1200px;
+	margin : 50px auto;
+}
+
+#About {
+	margin : auto;
+}
+
+hr {
+	color: black;
+	border-top: 4px solid #eee;
+	width: 80%;
+}
+
+#About-Me, #Education {
+	align-content: center;
+}
+
+#About-Me {
+	
+}
+
+#Education {
+
+}
+
+
+
+.usto-img{
+	width: 30%;
+	align-self: center;
+	margin : auto;
+}
+
+/* END OF ABOUT */
+
+/* WORK */
+
+#Work {
+
+}
+
+.work-panel {
+	margin: auto;
+}
+
+.project-div {
+	margin: 20px auto;
+}
+
+/* END OF WORK */
+#Skills {
+
+}

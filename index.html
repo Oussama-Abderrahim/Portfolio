@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Oussama's Portfolio</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- BOOTSTRAP -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+		<!-- HEADER -->
+		<header class="jumbotron">
+			<!-- NAVBAR -->
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-user"></span></a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<!-- LEFT SIDE  -->
+						<ul class="nav navbar-nav">
+							<li><a href="#About">About</a></li>
+							<li><a href="#Work">Work</a></li>
+							<li><a href="#Skills">Skills</a></li>
+						</ul>
+						<!-- RIGHT SIDE  -->
+						<ul class="nav navbar-nav navbar-right">
+							<li><img src="img/fb-logo.png" style="height: 50px"></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div id="welcome-text" class="container text-center">
+				<h1>Hi,</h1>
+				<h2>I'm Abderrahim Oussama</h2>
+				<h2>A fired up FULL STACK developper !</h2>
+				<button class="btn btn-default btn-lg" onclick="alert('Coming Soon');">Download resume</button><br>
+				<img class="face-pic img-circle"
+				src="img/face.jpg" alt="My pic should be here..">
+			</div>
+		</header>
+		<!-- END OF HEADER -->
+		<!-- MAIN CONTENT -->
+		<div id="main-wrapper"  class="container-fluid">
+			
+			<!-- ABOUT -->
+			<div id="About" class="row">
+				<div id="About-Me" class="col-sm-7 text-center">
+					<h1 class="text-center ">About Me</h1>
+					<hr>
+					<p>
+						Lorem Ipsum Something about my name,
+						Lorem Ipsum Something about my future,
+						Lorem Ipsum Something about my ambition,
+						Lorem Ipsum I'm gonna have a big title One day.
+					</p>
+					<p>
+						Lorem Ipsum Something about my name
+						Lorem Ipsum Something about my future
+						Lorem Ipsum Something about my ambition
+						Lorem Ipsum I'm gonna have a big title One day.
+					</p>
+				</div>
+				<div class="col-sm-1"></div>
+				<div id="Education" class="col-sm-4 text-center">
+					<h1>Education</h1>
+					<hr>
+					<img class="img-circle usto-img"
+					src="img/USTO-logo.jpg" alt="University Of Science And Technology Mohammed Bodiaf">
+					<h3>Student at University Of Sience And Technology Oran</h3>
+					<p class="text-center">2015-Today</p>
+				</div>
+			</div>
+			<!-- END OF ABOUT -->
+			<!-- WORK -->
+			<div id="Work" class="container-fluid text-center">
+				<h1>My Work</h1>
+				<hr>
+				<ul class="nav nav-pills">
+					<li class="active"><a data-toggle="pill" href="#work-web">Web developpement</a></li>
+					<li><a data-toggle="pill" href="#work-app">Applications</a></li>
+					<li><a data-toggle="pill" href="#work-other">Others</a></li>
+				</ul>
+				
+				<div class="tab-content">
+					<div id="work-web" class="work-panel row tab-pane fade in active">
+						<a class="project-div thumbnail col-sm-3">
+							<img src="http://via.placeholder.com/300x150" alt="project preview">
+							<div class="caption">
+								<h3>ProjectTitle</h3>
+								<h4>2018</h4>
+							</div>
+						</a>
+						<div class="col-sm-1"></div>
+						<a class="project-div thumbnail col-sm-3">
+							<img src="http://via.placeholder.com/300x150" alt="project preview">
+							<div class="caption">
+								<h3>ProjectTitle</h3>
+								<h4>2018</h4>
+							</div>
+						</a>
+						<div class="col-sm-1"></div>
+						<a class="project-div thumbnail col-sm-3">
+							<img src="http://via.placeholder.com/300x150" alt="project preview">
+							<div class="caption">
+								<h3>ProjectTitle</h3>
+								<h4>2018</h4>
+							</div>
+						</a>
+						<a class="project-div thumbnail col-sm-3">
+							<img src="http://via.placeholder.com/300x150" alt="project preview">
+							<div class="caption">
+								<h3>ProjectTitle</h3>
+								<h4>2018</h4>
+							</div>
+						</a>
+						<div class="col-sm-1"></div>
+						<a class="project-div thumbnail col-sm-3">
+							<img src="http://via.placeholder.com/300x150" alt="project preview">
+							<div class="caption">
+								<h3>ProjectTitle</h3>
+								<h4>2018</h4>
+							</div>
+						</a>
+						<div class="col-sm-1"></div>
+						
+					</div>	<!-- END WORK WEB  -->
+					<div id="work-app" class="work-panel row tab-pane fade">
+						<a class="project-div thumbnail col-sm-3">
+							<img src="http://via.placeholder.com/300x150" alt="project preview">
+							<div class="caption">
+								<h3>ProjectTitle</h3>
+								<h4>2018</h4>
+							</div>
+						</a>
+						<div class="col-sm-1"></div>
+						<a class="project-div thumbnail col-sm-3">
+							<img src="http://via.placeholder.com/300x150" alt="project preview">
+							<div class="caption">
+								<h3>ProjectTitle</h3>
+								<h4>2018</h4>
+							</div>
+						</a>
+						<div class="col-sm-1"></div>
+						<a class="project-div thumbnail col-sm-3">
+							<img src="http://via.placeholder.com/300x150" alt="project preview">
+							<div class="caption">
+								<h3>ProjectTitle</h3>
+								<h4>2018</h4>
+							</div>
+						</a>
+						<a class="project-div thumbnail col-sm-3">
+							<img src="http://via.placeholder.com/300x150" alt="project preview">
+							<div class="caption">
+								<h3>ProjectTitle</h3>
+								<h4>2018</h4>
+							</div>
+						</a>
+
+					</div> <!-- END WORK APP -->
+					<div id="work-other" class="work-panel row tab-pane fade">
+						<a class="project-div thumbnail col-sm-3">
+							<img src="http://via.placeholder.com/300x150" alt="project preview">
+							<div class="caption">
+								<h3>ProjectTitle</h3>
+								<h4>2018</h4>
+							</div>
+						</a>
+						<div class="col-sm-1"></div>
+						<a class="project-div thumbnail col-sm-3">
+							<img src="http://via.placeholder.com/300x150" alt="project preview">
+							<div class="caption">
+								<h3>ProjectTitle</h3>
+								<h4>2018</h4>
+							</div>
+						</a>
+					</div> <!-- END WORK OTHERS  -->
+				</div>
+			</div>
+			<!-- END OF WORK -->
+
+
+			<!-- SKILLS -->
+			<div id="Skills" class="container-fluid text-center">
+				<h1>My skills</h1>
+				<hr>
+			</div>
+			<!-- END OF SKILLS -->
+		</div>
+		<!-- END OF MAIN CONTENT -->
+	</body>
+</html>
