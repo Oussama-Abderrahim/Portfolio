@@ -85,3 +85,16 @@ hr {
 #Skills {
 
 }
+
+#Skills ul{
+	display: flex;
+	list-style-type: none;
+}
+
+#Skills img{
+	width: 50%;
+}
+
+#Skills img:hover{
+	width: 60%;
+}
