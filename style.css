@@ -35,8 +35,10 @@ header {
 	margin : 50px auto;
 }
 
+/* ABOUT */
+
 #About {
-	margin : auto;
+	margin : 50px auto;
 }
 
 hr {
@@ -49,7 +51,8 @@ hr {
 	align-content: center;
 }
 
-#About-Me {
+#Presentation {
+	font-size: 1.2em;
 	
 }
 
@@ -82,18 +85,44 @@ hr {
 }
 
 /* END OF WORK */
-#Skills {
 
+/* SKILLS */
+
+#Skills{
+	margin: 50px auto;
+}
+
+.skill-div {
+	margin: 30px auto;
+	height: 100%;
 }
 
 #Skills ul{
 	list-style-type: none;
 }
 
+#Skills a{
+	text-decoration: none;
+}
+
 #Skills img{
+	margin: 30px auto;
 	width: 50%;
 }
 
 #Skills img:hover{
-	width: 60%;
+	margin: 20px auto;
+	width: 55%;
+}
+
+#Skills h4 { /*Skill names*/
+	font-size: 2em;
+}
+
+
+/* Footer */
+
+footer 
+{
+	background-color: #eee;
 }
