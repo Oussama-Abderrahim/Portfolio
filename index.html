@@ -10,6 +10,12 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
+	<script>
+		$(document).on('scroll', function (e) {
+			var alpha = $(document).scrollTop() / 550;
+			$('.navbar').css('background-color', 'rgba(0, 0, 0,' + alpha + ')');
+		});
+	</script>
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 		<!-- HEADER -->
 		<header class="jumbotron">
@@ -33,7 +39,9 @@
 						</ul>
 						<!-- RIGHT SIDE  -->
 						<ul class="nav navbar-nav navbar-right">
-							<li><img src="img/fb-logo.png" style="height: 50px"></li>
+							<li class="logo"></li>
+							<li class="logo"></li>
+							<li class="logo"></li>
 						</ul>
 					</div>
 				</div>
@@ -49,12 +57,13 @@
 			</div>
 		</header>
 		<!-- END OF HEADER -->
+
 		<!-- MAIN CONTENT -->
 		<div id="main-wrapper"  class="container-fluid">
 			
 			<!-- ABOUT -->
-			<div id="About" class="row">
-				<h1 class="text-center">About Me</h1>
+			<div id="About" class="row text-center">
+				<h1 class="Section-Title">About Me</h1>
 				<hr>
 				<div id="Presentation" class="col-sm-6 text-center">
 					<h1 class="text-center">Who am I</h1>
@@ -86,7 +95,7 @@
 			<!-- END OF ABOUT -->
 			<!-- WORK -->
 			<div id="Work" class="container-fluid text-center">
-				<h1>My Work</h1>
+				<h1 class="Section-Title">My Work</h1>
 				<hr>
 				<ul class="nav nav-pills">
 					<li class="active"><a data-toggle="pill" href="#work-web">Web developpement</a></li>
@@ -103,7 +112,7 @@
 								<h4>2018</h4>
 							</div>
 						</a>
-						<div class="col-sm-1"></div>
+						<a class="col-sm-1"></a>
 						<a class="project-div thumbnail col-sm-3">
 							<img src="http://via.placeholder.com/300x150" alt="project preview">
 							<div class="caption">
@@ -111,7 +120,7 @@
 								<h4>2018</h4>
 							</div>
 						</a>
-						<div class="col-sm-1"></div>
+						<a class="col-sm-1"></a>
 						<a class="project-div thumbnail col-sm-3">
 							<img src="http://via.placeholder.com/300x150" alt="project preview">
 							<div class="caption">
@@ -126,7 +135,7 @@
 								<h4>2018</h4>
 							</div>
 						</a>
-						<div class="col-sm-1"></div>
+						<a class="col-sm-1"></a>
 						<a class="project-div thumbnail col-sm-3">
 							<img src="http://via.placeholder.com/300x150" alt="project preview">
 							<div class="caption">
@@ -134,139 +143,138 @@
 								<h4>2018</h4>
 							</div>
 						</a>
-						<div class="col-sm-1"></div>
-						
-						</div>	<!-- END WORK WEB  -->
-						<div id="work-app" class="work-panel row tab-pane fade">
-							<a class="project-div thumbnail col-sm-3">
-								<img src="http://via.placeholder.com/300x150" alt="project preview">
-								<div class="caption">
-									<h3>ProjectTitle</h3>
-									<h4>2018</h4>
-								</div>
-							</a>
-							<div class="col-sm-1"></div>
-							<a class="project-div thumbnail col-sm-3">
-								<img src="http://via.placeholder.com/300x150" alt="project preview">
-								<div class="caption">
-									<h3>ProjectTitle</h3>
-									<h4>2018</h4>
-								</div>
-							</a>
-							<div class="col-sm-1"></div>
-							<a class="project-div thumbnail col-sm-3">
-								<img src="http://via.placeholder.com/300x150" alt="project preview">
-								<div class="caption">
-									<h3>ProjectTitle</h3>
-									<h4>2018</h4>
-								</div>
-							</a>
-							<a class="project-div thumbnail col-sm-3" >
-								<img src="http://via.placeholder.com/300x150" alt="project preview">
-								<div class="caption">
-									<h3>ProjectTitle</h3>
-									<h4>2018</h4>
-								</div>
-							</a>
-							</div> <!-- END WORK APP -->
-							<div id="work-other" class="work-panel row tab-pane fade">
-								<a class="project-div thumbnail col-sm-3">
-									<img src="http://via.placeholder.com/300x150" alt="project preview">
-									<div class="caption">
-										<h3>ProjectTitle</h3>
-										<h4>2018</h4>
-									</div>
-								</a>
-								<div class="col-sm-1"></div>
-								<a class="project-div thumbnail col-sm-3">
-									<img src="http://via.placeholder.com/300x150" alt="project preview">
-									<div class="caption">
-										<h3>ProjectTitle</h3>
-										<h4>2018</h4>
-									</div>
-								</a>
-								</div> <!-- END WORK OTHERS  -->
-							</div>
-						</div>
-						<!-- END OF WORK -->
-						<!-- SKILLS -->
-						<div id="Skills" class="row container-fluid text-center">
-							<h1>My skills</h1>
-							<hr>
-							<div class="skill-div col-sm-12">
-								<h3><strong>Web Development</strong></h3>
-								<hr>
-								<ul class="container-fluid row">
-									<li class="skill-li col-sm-3">
-										<a>
-											<img src="img/Skills/html.png">
-											<h4>HTML 5</h4>
-										</a>
-									</li>
-									<li class="skill-li col-sm-3">
-										<a>
-											<img src="img/Skills/css.png">
-											<h4>CSS</h4>
-										</a>
-									</li>
-									<li class="skill-li col-sm-3">
-										<a>
-											<img src="img/Skills/js.png">
-											<h4>JavaScript</h4>
-										</a>
-									</li>
-									<li class="skill-li col-sm-3">
-										<a>
-											<img src="img/Skills/bootstrap.png">
-											<h4>bootstrap</h4>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div class="skill-div col-sm-6">
-								<h3><strong>Others</strong></h3>
-								<hr>
-								<ul class="container-fluid row text-center">
-									<li class="skill-li col-sm-4">
-										<a>
-											<img src="img/Skills/android.png">
-											<h4>Android</h4>
-										</a>
-									</li>
-									<li class="skill-li col-sm-4">
-										<a>
-											<img src="img/Skills/github.png">
-											<h4>GitHub</h4>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div></div>
-							<div class="skill-div col-sm-6 text-center">
-								<h3><strong>Desktop</strong></h3>
-								<hr>
-								<ul class="container-fluid row">
-									<li class="skill-li col-sm-4">
-										<a>
-											<img src="img/Skills/java.png">
-											<h4>Java</h4>
-										</a>
-									</li>
-									<li class="skill-li col-sm-4">
-										<a>
-											<img src="img/Skills/SDL.png">
-											<h4>C-SDL</h4>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<!-- END OF SKILLS -->
-					</div>
-					<!-- END OF MAIN CONTENT -->
+						<a class="col-sm-1"></a>
+					</div>	<!-- END WORK WEB  -->
 
-					<footer class="container-fluid text-center">
-						<h1>Miaou</h1>
-					</footer>
-				</body>
-			</html>
+					<div id="work-app" class="work-panel row tab-pane fade">
+						<a class="project-div thumbnail col-sm-3">
+							<img src="http://via.placeholder.com/300x150" alt="project preview">
+							<div class="caption">
+								<h3>ProjectTitle</h3>
+								<h4>2018</h4>
+							</div>
+						</a>
+						<a class="col-sm-1"></a>
+						<a class="project-div thumbnail col-sm-3">
+							<img src="http://via.placeholder.com/300x150" alt="project preview">
+							<div class="caption">
+								<h3>ProjectTitle</h3>
+								<h4>2018</h4>
+							</div>
+						</a>
+						<a class="col-sm-1"></a>
+						<a class="project-div thumbnail col-sm-3">
+							<img src="http://via.placeholder.com/300x150" alt="project preview">
+							<div class="caption">
+								<h3>ProjectTitle</h3>
+								<h4>2018</h4>
+							</div>
+						</a>
+						<a class="project-div thumbnail col-sm-3" >
+							<img src="http://via.placeholder.com/300x150" alt="project preview">
+							<div class="caption">
+								<h3>ProjectTitle</h3>
+								<h4>2018</h4>
+							</div>
+						</a>
+					</div> <!-- END WORK APP -->
+					<div id="work-other" class="work-panel row tab-pane fade">
+						<a class="project-div thumbnail col-sm-3">
+							<img src="http://via.placeholder.com/300x150" alt="project preview">
+							<div class="caption">
+								<h3>ProjectTitle</h3>
+								<h4>2018</h4>
+							</div>
+						</a>
+						<div class="col-sm-1"></div>
+						<a class="project-div thumbnail col-sm-3">
+							<img src="http://via.placeholder.com/300x150" alt="project preview">
+							<div class="caption">
+								<h3>ProjectTitle</h3>
+								<h4>2018</h4>
+							</div>
+						</a>
+					</div> <!-- END WORK OTHERS  -->
+				</div>
+			</div>	<!-- END OF WORK -->
+			<!-- SKILLS -->
+			<div id="Skills" class="row container-fluid text-center">
+				<h1 class="Section-Title">My skills</h1>
+				<hr>
+				<div class="skill-div col-sm-12">
+					<h3><strong>Web Development</strong></h3>
+					<hr>
+					<ul class="container-fluid row">
+						<li class="skill-li col-sm-3">
+							<a>
+								<img src="img/Skills/html.png">
+								<h4>HTML 5</h4>
+							</a>
+						</li>
+						<li class="skill-li col-sm-3">
+							<a>
+								<img src="img/Skills/css.png">
+								<h4>CSS</h4>
+							</a>
+						</li>
+						<li class="skill-li col-sm-3">
+							<a>
+								<img src="img/Skills/js.png">
+								<h4>JavaScript</h4>
+							</a>
+						</li>
+						<li class="skill-li col-sm-3">
+							<a>
+								<img src="img/Skills/bootstrap.png">
+								<h4>bootstrap</h4>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="skill-div col-sm-6">
+					<h3><strong>Others</strong></h3>
+					<hr>
+					<ul class="container-fluid row text-center">
+						<li class="skill-li col-sm-4">
+							<a>
+								<img src="img/Skills/android.png">
+								<h4>Android</h4>
+							</a>
+						</li>
+						<li class="skill-li col-sm-4">
+							<a>
+								<img src="img/Skills/github.png">
+								<h4>GitHub</h4>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div></div>
+				<div class="skill-div col-sm-6 text-center">
+					<h3><strong>Desktop</strong></h3>
+					<hr>
+					<ul class="container-fluid row">
+						<li class="skill-li col-sm-4">
+							<a>
+								<img src="img/Skills/java.png">
+								<h4>Java</h4>
+							</a>
+						</li>
+						<li class="skill-li col-sm-4">
+							<a>
+								<img src="img/Skills/SDL.png">
+								<h4>C-SDL</h4>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div> <!-- END OF SKILLS -->
+		</div> 
+		<!-- END OF MAIN CONTENT -->
+
+		<footer class="container-fluid text-center">
+			<h1>Miaou</h1>
+		</footer>
+
+	</body>
+</html>
