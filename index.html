@@ -14,12 +14,15 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<script>
-		/*
-		$(document).on('scroll', function (e) {
-			var alpha = $(document).scrollTop() / 550;
-			$('.navbar').css('background-color', 'rgba(0, 0, 0,' + alpha + ')');
+	$(document).ready(function() {
+		$('.js-scrollTo').on('click', function() 
+		{
+			var page = $(this).attr('href'); // get target page
+			var speed = 750;				// time in ms 
+			$('html, body').animate({scrollTop: $(page).offset().top}, speed); //scroll
+				return false; 
 		});
-		*/
+	});
 	</script>
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 		<!-- HEADER -->
@@ -38,9 +41,9 @@
 					<div class="collapse navbar-collapse" id="myNavbar">
 						<!-- LEFT SIDE  -->
 						<ul class="nav navbar-nav">
-							<li><a href="#About">About</a></li>
-							<li><a href="#Work">Work</a></li>
-							<li><a href="#Skills">Skills</a></li>
+							<li><a class="js-scrollTo" href="#About">About</a></li>
+							<li><a class="js-scrollTo" href="#Work">Work</a></li>
+							<li><a class="js-scrollTo" href="#Skills">Skills</a></li>
 						</ul>
 						<!-- RIGHT SIDE  -->
 						<ul class="nav navbar-nav navbar-right">
