@@ -132,7 +132,8 @@ hr {
 #about-page a
 {
 	font-size: 48px;
-	margin : auto 5px;
+	height: 100%;
+	margin : 20px 5px;
 }
 /* Footer */
 
