@@ -127,7 +127,13 @@ hr {
 	font-size: 2em;
 }
 
+/* ABOUT PAGE */
 
+#about-page a
+{
+	font-size: 48px;
+	margin : auto 5px;
+}
 /* Footer */
 
 footer 
