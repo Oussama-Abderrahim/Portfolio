@@ -1,5 +1,8 @@
   body {
       position: relative; 
+      transition: all 0.2s;
+
+      font-family: "Comic relief";
   }
 
 /* Remove the navbar's default margin-bottom and rounded borders */ 
@@ -75,7 +78,7 @@ hr {
 /* WORK */
 
 #Work {
-
+	transition: all 0.5s;
 }
 
 .work-panel {
@@ -115,6 +118,8 @@ hr {
 #Skills img{
 	margin: 20px auto;
 	width: 50%;
+	transition: all 0.3s;
+
 }
 
 #Skills img:hover{
