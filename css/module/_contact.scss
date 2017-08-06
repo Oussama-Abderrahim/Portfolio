@@ -1,0 +1,36 @@
+.contact {
+	@extend .container;
+	@extend .row;
+	align-content: center;
+	
+	height: 270px;
+	margin: auto;
+	padding: 0 100px;
+	
+	background-color: lightblue;
+}
+
+.contact-text {
+	@extend .col-sm-4;
+	@extend .col-xs-12;
+	@extend .text-center;
+	
+	color: white;
+}
+
+.contact-links {
+	@extend .col-sm-4;
+	@extend .col-xs-12;
+	@extend .row;
+
+	list-style-type: none;
+}
+
+.contact-item {
+	@extend .col-sm-3;
+	@extend .col-xs-3;
+
+	height: 100%;
+	margin: 20px 5px;
+	font-size: 48px;
+}

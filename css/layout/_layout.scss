@@ -1,0 +1,15 @@
+.main-wrapper {
+	@extend .container-fluid;
+
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.sections-wrapper {
+	@extend .container;
+	@extend .container-fluid;
+
+	max-width: 1200px;
+	margin : 50px auto;
+}

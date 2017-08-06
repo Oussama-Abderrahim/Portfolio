@@ -1,0 +1,30 @@
+.about {
+	@extend .row;
+	@extend .text-center;
+
+}
+
+.about-text {
+	@extend .col-md-6;
+	@extend .col-xs-12;
+
+	p {
+		width: 90%;
+		margin: auto;
+
+		text-align: justify;
+		font-size: 1.4em;
+	}
+}
+
+.about-education {
+	@extend .col-md-6;
+	@extend .col-xs-12;
+
+	.usto-img {
+		@extend .img-circle;
+
+		width: 30%;
+		margin : auto;
+	}
+}
