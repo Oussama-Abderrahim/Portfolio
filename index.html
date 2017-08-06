@@ -1,322 +1,288 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Oussama's Portfolio</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<!-- BOOTSTRAP -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<title>Oussama Abderrahim</title>
+		<link rel="stylesheet" href="css/style.css">
+		<!-- BOOTSTRAP -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 
 		<!-- FONT AWESOME -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
-	<script>
-	$(document).ready(function() {
-		$('.js-scrollTo').on('click', function() 
-		{
-			var page = $(this).attr('href'); // get target page
-			var speed = 750;				// time in ms 
-			$('html, body').animate({scrollTop: $(page).offset().top}, speed); //scroll
-				return false; 
-		});
-	});
-	</script>
-	<body data-spy="scroll" data-target=".navbar" data-offset="50">
-		<!-- HEADER -->
-		<header class="jumbotron">
-			<!-- NAVBAR -->
-			<nav class="navbar navbar-inverse navbar-fixed-top">
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand js-scrollTo" href="#"><span class="glyphicon glyphicon-user"></span></a>
+	<body>
+		<div class="main-wrapper">
+			<header class="header">
+				<nav class="header-navbar">
+					NavBar goes here
+				</nav>
+				<div class="welcome-text">
+					<h2>Hi,</h2>
+					<h2>I'm Abderrahim Oussama</h2>
+					<h2>A Fired Up Full Stack Developper !</h2>
+				</div>
+				<button class="btn btn-resume">
+				Download Resume
+				</button>
+				
+				<img class ="face-img" src="img/face.jpg" alt="My face">
+			</header>
+			<div class="sections-wrapper">
+				<!-- ABOUT  -->
+				<section class="section about">
+					<h2 class="section-title">About Me</h2>
+					<hr>
+					<div class="about-text">
+						<h2>Who am I</h2>
+						<hr>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi voluptatibus dolorum eligendi nihil incidunt vel ipsa magni alias maiores sapiente aspernatur quos vitae adipisci voluptatum officia iste, nemo recusandae eveniet!</p>
 					</div>
-					<div class="collapse navbar-collapse" id="myNavbar">
-						<!-- LEFT SIDE  -->
-						<ul class="nav navbar-nav">
-							<li><a class="js-scrollTo" href="#About">About</a></li>
-							<li><a class="js-scrollTo" href="#Work">Work</a></li>
-							<li><a class="js-scrollTo" href="#Skills">Skills</a></li>
-						</ul>
-						<!-- RIGHT SIDE  -->
-						<ul class="nav navbar-nav navbar-right">
-							<li class="logo">
-								<a href="https://www.facebook.com/OussamaAbderrahim13">
-									<span class="fa fa-facebook-official"></span>
-								</a>	
-							</li>
-							<li class="logo">
-								<a href="https://twitter.com/sakasakyray">
-									<span class="fa fa-twitter"></span>
-								</a>									
-							</li>
-							<li class="logo">
-								<a href="https://www.freecodecamp.com/sakasaky">
-									<span class="fa fa-free-code-camp"></span>
-								</a>									
-							</li>
-							<li>
-								<a href="https://github.com/Sakasaky">
-									<span class="fa fa-github"></span>
+					<div class="about-education">
+						<h2>Education</h2>
+						<hr>
+						<img class="usto-img"
+						src="img/USTO-logo.jpg" alt="University Of Science And Technology Mohammed Bodiaf">
+						<h3>CS Student</h3>
+						<h3>University Of Science And Technology Oran</h3>
+						<p>2015-Today</p>
+					</div>
+				</section>
+				<!-- END OF ABOUT -->
+				<!-- WORK -->
+				<section class="section work">
+					<h2 class="section-title">My Work</h2>
+					<hr>
+
+					<!-- Tabs navbar -->
+					<ul class="nav nav-pills">
+						<li class="active">
+							<a data-toggle="pill" href="#work-web">Web developpement</a>
+						</li>
+						<li>
+							<a data-toggle="pill" href="#work-app">Applications</a>
+						</li>
+						<li>
+							<a data-toggle="pill" href="#work-other">Others</a>
+						</li>
+					</ul>
+				
+					<div class="tab-content">
+						<div id="work-web" class="work-tab active">
+							<a class="project-thumb">
+								<img src="http://via.placeholder.com/300x150" alt="project preview">
+								<div class="caption">
+									<h3>ProjectTitle</h3>
+									<h4>2018</h4>
+								</div>
+							</a>
+							<a class="project-sep"></a>
+							<a class="project-thumb">
+								<img src="http://via.placeholder.com/300x150" alt="project preview">
+								<div class="caption">
+									<h3>ProjectTitle</h3>
+									<h4>2018</h4>
+								</div>
+							</a>
+							<a class="project-sep"></a>
+							<a class="project-thumb">
+								<img src="http://via.placeholder.com/300x150" alt="project preview">
+								<div class="caption">
+									<h3>ProjectTitle</h3>
+									<h4>2018</h4>
+								</div>
+							</a>
+							<a class="project-thumb">
+								<img src="http://via.placeholder.com/300x150" alt="project preview">
+								<div class="caption">
+									<h3>ProjectTitle</h3>
+									<h4>2018</h4>
+								</div>
+							</a>
+							<a class="project-sep"></a>
+							<a class="project-thumb">
+								<img src="http://via.placeholder.com/300x150" alt="project preview">
+								<div class="caption">
+									<h3>ProjectTitle</h3>
+									<h4>2018</h4>
+								</div>
+							</a>
+							<a class="project-sep"></a>
+						</div>	<!-- END WORK WEB  -->
+
+						<div id="work-app" class="work-tab">
+							<a class="project-thumb">
+								<img src="http://via.placeholder.com/300x150" alt="project preview">
+								<div class="caption">
+									<h3>ProjectTitle</h3>
+									<h4>2018</h4>
+								</div>
+							</a>
+							<a class="project-sep"></a>
+							<a class="project-thumb">
+								<img src="http://via.placeholder.com/300x150" alt="project preview">
+								<div class="caption">
+									<h3>ProjectTitle</h3>
+									<h4>2018</h4>
+								</div>
+							</a>
+							<a class="project-sep"></a>
+							<a class="project-thumb">
+								<img src="http://via.placeholder.com/300x150" alt="project preview">
+								<div class="caption">
+									<h3>ProjectTitle</h3>
+									<h4>2018</h4>
+								</div>
+							</a>
+							<a class="project-thumb" >
+								<img src="http://via.placeholder.com/300x150" alt="project preview">
+								<div class="caption">
+									<h3>ProjectTitle</h3>
+									<h4>2018</h4>
+								</div>
+							</a>
+						</div> <!-- END WORK APP -->
+
+						<div id="work-other" class="work-tab">
+							<a class="project-thumb">
+								<img src="http://via.placeholder.com/300x150" alt="project preview">
+								<div class="caption">
+									<h3>ProjectTitle</h3>
+									<h4>2018</h4>
+								</div>
+							</a>
+							<a class="project-sep"></a>
+							<a class="project-thumb">
+								<img src="http://via.placeholder.com/300x150" alt="project preview">
+								<div class="caption">
+									<h3>ProjectTitle</h3>
+									<h4>2018</h4>
+								</div>
+							</a>
+						</div> <!-- END WORK OTHERS  -->
+					</div>
+				</section>
+				<!-- END OF WORK -->
+				<!-- SKILLS -->
+				<section class="section skills">
+					<h2 class="section-title">My Skills</h2>
+					<hr>
+					
+					<div class="skills-cat skills-cat-main">
+						<h3 class="skills-cat-title">Web Development</h3>
+						<hr>
+						<ul class="skills-list">
+							<li class="skill-list-item">
+								<a>
+									<img src="img/Skills/html.png">
+									<h4>HTML 5</h4>
 								</a>
 							</li>
+							<li class="skill-list-item">
+								<a>
+									<img src="img/Skills/css.png">
+									<h4>CSS</h4>
+								</a>
+							</li>
+							<li class="skill-list-item">
+								<a>
+									<img src="img/Skills/js.png">
+									<h4>JavaScript</h4>
+								</a>
+							</li>
+							<li class="skill-list-item">
+								<a>
+									<img src="img/Skills/bootstrap.png">
+									<h4>bootstrap</h4>
+								</a>
+							</li>						
+							<li class="skill-list-item">
+								<a>
+									<img src="img/Skills/jquery.png">
+									<h4>JQuery</h4>
+								</a>
+							</li>	
 						</ul>
 					</div>
-				</div>
-			</nav>
-			<div id="welcome-text" class="container text-center">
-				<h1>Hi,</h1>
-				<h2>I'm Abderrahim Oussama</h2>
-				<h2>A fired up FULL STACK developper !</h2>
-				<button class="btn btn-default btn-lg" onclick="alert('Coming Soon');">Download resume</button><br>
-				<img class="face-pic img-circle"
-				data-toggle="tooltip" title="Woooooosh ! imagine some effects here "
-				src="img/face.jpg" alt="My pic should be here..">
+
+					<div class="skills-cat">
+						<h3 class="skills-cat-title">Desktop</h3>
+						<hr>
+						<ul class="skills-list">
+							<li class="skill-list-item">
+								<a>
+									<img src="img/Skills/java.png">
+									<h4>Java</h4>
+								</a>
+							</li>
+							<li class="skill-list-item">
+								<a>
+									<img src="img/Skills/SDL.png">
+									<h4>C-SDL</h4>
+								</a>
+							</li>						
+						</ul>
+					</div>
+
+					<div class="skills-cat">
+						<h3 class="skills-cat-title">Others</h3>
+						<hr>
+						<ul class="skills-list">
+							<li class="skill-list-item">
+								<a>
+									<img src="img/Skills/android.png">
+									<h4>Android</h4>
+								</a>
+							</li>
+							<li class="skill-list-item">
+								<a>
+									<img src="img/Skills/github.png">
+									<h4>GitHub</h4>
+								</a>
+							</li>				
+						</ul>
+					</div>
+				</section>
+				<!-- END OF SKILLS -->
 			</div>
-		</header>
-		<!-- END OF HEADER -->
-
-		<!-- MAIN CONTENT -->
-		<div id="main-wrapper"  class="container-fluid">
-			
-			<!-- ABOUT -->
-			<section id="About" class="row text-center">
-				<h1 class="Section-Title">About Me</h1>
-				<hr>
-				<div id="Presentation" class="col-sm-6 text-center">
-					<h1 class="text-center">Who am I</h1>
-					<hr>
-					<p>
-						Lorem Ipsum Something about my name,
-						Lorem Ipsum Something about my future,
-						Lorem Ipsum Something about my ambition,
-						Lorem Ipsum I'm gonna have a big title One day.
-					</p>
-					<p>
-						Lorem Ipsum Something about my name
-						Lorem Ipsum Something about my future
-						Lorem Ipsum Something about my ambition
-						Lorem Ipsum I'm gonna have a big title One day.
-					</p>
-				</div>
-				<div class="col-sm-1"></div>
-				<div id="Education" class="col-sm-5 text-center">
-					<h1>Education</h1>
-					<hr>
-					<img class="img-circle usto-img"
-					src="img/USTO-logo.jpg" alt="University Of Science And Technology Mohammed Bodiaf">
-					<h3>CS Student</h3>
-					<h3>University Of Science And Technology Oran</h3>
-					<p class="text-center">2015-Today</p>
-				</div>
-			</section>
-			<!-- END OF ABOUT -->
-			<!-- WORK -->
-			<section id="Work" class="container-fluid text-center">
-				<h1 class="Section-Title">My Work</h1>
-				<hr>
-				<ul class="nav nav-pills">
-					<li class="active"><a data-toggle="pill" href="#work-web">Web developpement</a></li>
-					<li><a data-toggle="pill" href="#work-app">Applications</a></li>
-					<li><a data-toggle="pill" href="#work-other">Others</a></li>
-				</ul>
-				
-				<div class="tab-content">
-					<div id="work-web" class="work-panel row tab-pane fade in active">
-						<a class="project-div thumbnail col-sm-3">
-							<img src="http://via.placeholder.com/300x150" alt="project preview">
-							<div class="caption">
-								<h3>ProjectTitle</h3>
-								<h4>2018</h4>
-							</div>
-						</a>
-						<a class="col-sm-1"></a>
-						<a class="project-div thumbnail col-sm-3">
-							<img src="http://via.placeholder.com/300x150" alt="project preview">
-							<div class="caption">
-								<h3>ProjectTitle</h3>
-								<h4>2018</h4>
-							</div>
-						</a>
-						<a class="col-sm-1"></a>
-						<a class="project-div thumbnail col-sm-3">
-							<img src="http://via.placeholder.com/300x150" alt="project preview">
-							<div class="caption">
-								<h3>ProjectTitle</h3>
-								<h4>2018</h4>
-							</div>
-						</a>
-						<a class="project-div thumbnail col-sm-3">
-							<img src="http://via.placeholder.com/300x150" alt="project preview">
-							<div class="caption">
-								<h3>ProjectTitle</h3>
-								<h4>2018</h4>
-							</div>
-						</a>
-						<a class="col-sm-1"></a>
-						<a class="project-div thumbnail col-sm-3">
-							<img src="http://via.placeholder.com/300x150" alt="project preview">
-							<div class="caption">
-								<h3>ProjectTitle</h3>
-								<h4>2018</h4>
-							</div>
-						</a>
-						<a class="col-sm-1"></a>
-					</div>	<!-- END WORK WEB  -->
-
-					<div id="work-app" class="work-panel row tab-pane fade">
-						<a class="project-div thumbnail col-sm-3">
-							<img src="http://via.placeholder.com/300x150" alt="project preview">
-							<div class="caption">
-								<h3>ProjectTitle</h3>
-								<h4>2018</h4>
-							</div>
-						</a>
-						<a class="col-sm-1"></a>
-						<a class="project-div thumbnail col-sm-3">
-							<img src="http://via.placeholder.com/300x150" alt="project preview">
-							<div class="caption">
-								<h3>ProjectTitle</h3>
-								<h4>2018</h4>
-							</div>
-						</a>
-						<a class="col-sm-1"></a>
-						<a class="project-div thumbnail col-sm-3">
-							<img src="http://via.placeholder.com/300x150" alt="project preview">
-							<div class="caption">
-								<h3>ProjectTitle</h3>
-								<h4>2018</h4>
-							</div>
-						</a>
-						<a class="project-div thumbnail col-sm-3" >
-							<img src="http://via.placeholder.com/300x150" alt="project preview">
-							<div class="caption">
-								<h3>ProjectTitle</h3>
-								<h4>2018</h4>
-							</div>
-						</a>
-					</div> <!-- END WORK APP -->
-
-					<div id="work-other" class="work-panel row tab-pane fade">
-						<a class="project-div thumbnail col-sm-3">
-							<img src="http://via.placeholder.com/300x150" alt="project preview">
-							<div class="caption">
-								<h3>ProjectTitle</h3>
-								<h4>2018</h4>
-							</div>
-						</a>
-						<div class="col-sm-1"></div>
-						<a class="project-div thumbnail col-sm-3">
-							<img src="http://via.placeholder.com/300x150" alt="project preview">
-							<div class="caption">
-								<h3>ProjectTitle</h3>
-								<h4>2018</h4>
-							</div>
-						</a>
-					</div> <!-- END WORK OTHERS  -->
-				</div>
-			</section>	<!-- END OF WORK -->
-			<!-- SKILLS -->
-			<section id="Skills" class="row container-fluid text-center">
-				<h1 class="Section-Title">My skills</h1>
-				<hr>
-				<div class="skill-div col-sm-12">
-					<h3><strong>Web Development</strong></h3>
-					<hr>
-					<ul class="container-fluid row">
-						<li class="skill-li col-sm-3">
-							<a>
-								<img src="img/Skills/html.png">
-								<h4>HTML 5</h4>
-							</a>
-						</li>
-						<li class="skill-li col-sm-3">
-							<a>
-								<img src="img/Skills/css.png">
-								<h4>CSS</h4>
-							</a>
-						</li>
-						<li class="skill-li col-sm-3">
-							<a>
-								<img src="img/Skills/js.png">
-								<h4>JavaScript</h4>
-							</a>
-						</li>
-						<li class="skill-li col-sm-3">
-							<a>
-								<img src="img/Skills/bootstrap.png">
-								<h4>bootstrap</h4>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="skill-div col-sm-6">
-					<h3><strong>Others</strong></h3>
-					<hr>
-					<ul class="container-fluid row text-center">
-						<li class="skill-li col-sm-4">
-							<a>
-								<img src="img/Skills/android.png">
-								<h4>Android</h4>
-							</a>
-						</li>
-						<li class="skill-li col-sm-4">
-							<a>
-								<img src="img/Skills/github.png">
-								<h4>GitHub</h4>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div></div>
-				<div class="skill-div col-sm-6 text-center">
-					<h3><strong>Desktop</strong></h3>
-					<hr>
-					<ul class="container-fluid row">
-						<li class="skill-li col-sm-4">
-							<a>
-								<img src="img/Skills/java.png">
-								<h4>Java</h4>
-							</a>
-						</li>
-						<li class="skill-li col-sm-4">
-							<a>
-								<img src="img/Skills/SDL.png">
-								<h4>C-SDL</h4>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</section> <!-- END OF SKILLS -->
 			<!-- CONTACT -->
-			<section id="about-page" class="container-fluid row text-center">
-				<h1 class="Section-Title">Contact</h1>
-				<hr>
-				<div class="col-sm-5">
-					<a href="https://www.facebook.com/OussamaAbderrahim13" class="fa fa-facebook"></a>
-					<a href="https://twitter.com/sakasakyray" class="fa fa-twitter"></a>
-					<a href="https://github.com/Sakasaky" class="fa fa-github"></a>
-				</div>
-				<h1 class="col-sm-2">..Miaou?</h1>
-				<div class="col-sm-5">
-					<a class="fa fa-google-plus"></a>
-					<a href="https://www.freecodecamp.com/sakasaky" class="fa fa-free-code-camp"></a>
-					<a href="https://codepen.io/Sakasaky" class="fa fa-codepen"></a>
-				</div>
-			</section>
-		</div> 
-		<!-- END OF MAIN CONTENT -->
+			<footer class="footer contact">
+				<ul class="contact-links">
+					<li class="contact-item">
+						<a href="https://www.facebook.com/OussamaAbderrahim13" class="fa fa-facebook"></a>
+					</li>
+					<li class="contact-item">
+						<a href="https://twitter.com/sakasakyray" class="fa fa-twitter"></a>
+					</li>
+					<li class="contact-item">
+						<a href="https://github.com/Sakasaky" class="fa fa-github"></a>
+					</li>
+				</ul>
 
-		<footer class="container-fluid text-center">
-			© Oussama Abderrahim. Last Update - June 2017
-		</footer>
+				<div class="contact-text">
+					<h2>Get in touch</h2>
+					<p>I'm always looking to connect with people</p>
+					<p>Feel free to reach out</p>
+				</div>
 
+				<ul class="contact-links">
+					<li class="contact-item">
+						<a href="https://www.facebook.com/OussamaAbderrahim13" class="fa fa-facebook"></a>
+					</li>
+					<li class="contact-item">
+						<a href="https://twitter.com/sakasakyray" class="fa fa-twitter"></a>
+					</li>
+					<li class="contact-item">
+						<a href="https://github.com/Sakasaky" class="fa fa-github"></a>
+					</li>
+				</ul>
+			</footer>
+		</div>
 	</body>
 </html>
