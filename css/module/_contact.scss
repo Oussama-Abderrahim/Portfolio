@@ -3,7 +3,7 @@
 	@extend .row;
 	align-content: center;
 	
-	height: 270px;
+	width: 100%;
 	margin: auto;
 	padding: 0 100px;
 	
@@ -33,4 +33,10 @@
 	height: 100%;
 	margin: 20px 5px;
 	font-size: 48px;
+}
+
+.contact-form {
+	@extend .col-sm-12;
+
+	margin: 50px auto;
 }

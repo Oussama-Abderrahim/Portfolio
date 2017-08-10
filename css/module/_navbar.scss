@@ -1,12 +1,36 @@
 
 .header-navbar {
-	position: absolute;
+	@extend .navbar;
+	@extend .navbar-inverse; /*Dark theme*/
+
+	@extend .navbar-fixed-top; /*stay at the top of the screen (sticky/fixed)*/
+	// @extend .container-fluid;
+
 	width: 100%;
 	top: 0;
 	left: 0;
 	right: 0;
+	padding: 0 10px; 
 
 	font-size: 1.6em;
+
 	color: #FFF;
-	background-color: #000;
+
+	a {
+		
+	}
+}
+
+.header-navbar-list {
+	@extend .nav;
+	@extend .navbar-nav;
+
+	color: white;
+
+	a {
+		text-decoration: none;
+	}
+}
+.header-navbar-logo {
+
 }

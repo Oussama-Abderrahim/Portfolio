@@ -1,11 +1,13 @@
 .section {
 	@include clearfix; /*clear at start of each section*/
+
 	margin: 50px auto;
+	
 	text-align: center;
 	align-content: center;
 }
 
 .section-title {
-	font-size: 2em;
+	font-size: 3em;
 	font-weight: bold;
 }

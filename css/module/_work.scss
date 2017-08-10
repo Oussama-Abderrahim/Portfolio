@@ -1,4 +1,9 @@
 .work {
+	transition: all 0.5s;
+}
+
+.work-content {
+	@extend .tab-content;
 }
 
 .work-tab {
@@ -6,15 +11,20 @@
 
 	@extend .tab-pane;
 	@extend .fade;
-	@extend .in;
+	
+	&.active {
+		@extend .fade;
+		@extend .in;
+		@extend .active;
+	}
 
-	transition: all 0.5s;
 	margin: auto;
 }
 
 
 .project-thumb {
 	@extend .col-sm-3;
+	@extend .col-xs-5;
 
 	@extend .thumbnail;
 

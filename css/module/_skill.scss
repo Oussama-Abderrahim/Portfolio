@@ -1,6 +1,8 @@
 .skills {
 	// box-sizing: border-box;
-	@include box-sizing(border-box);
+	* {
+		@include box-sizing(border-box);
+	}
 }
 
 .skills-cat {
@@ -9,6 +11,7 @@
 
 	margin: 10px auto;
 	height: 100%;
+	align-content: center;
 }
 
 .skills-cat-main {
@@ -31,14 +34,14 @@
 
 .skill-list-item {
 	@extend .col-sm-3;
-	@extend .col-xs-6;
+	@extend .col-xs-5;
 
 	width: 200px;
 	height: 200px;
 	margin: 10px auto;
 
 	img {
-		margin: 20px auto;
+		padding: 20px auto;
 		width: 50%;
 		// transition: all 0.3s
 		@include transition(all 0.3s);

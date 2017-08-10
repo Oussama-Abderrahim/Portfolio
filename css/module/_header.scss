@@ -1,10 +1,12 @@
 .header {
 	@extend .jumbotron;
 
+	height: 460px;
+	padding-top: 80px;
 	text-align: center;
 }
 
-.welcome-text {
+.header-text {
 	margin : 20px auto;
 	
 	font-size: 1.6em;
@@ -15,7 +17,7 @@
 	@extend .btn-default;
 	@extend .btn-lg;
 	display: block;
-	margin: auto;
+	margin: 30px auto;
 
 	font-size: 1.3em;
 }
@@ -25,7 +27,7 @@
 
 	position: relative;
 	margin: auto;
-	top: 100px;
+	top: 10px;
 	
 
 	max-width: 170px;

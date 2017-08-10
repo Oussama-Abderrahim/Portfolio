@@ -8,35 +8,78 @@
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 		<title>Oussama Abderrahim</title>
-		<link rel="stylesheet" href="css/style.css">
 		<!-- BOOTSTRAP -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 
 		<!-- FONT AWESOME -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<!-- Page Style -->
+		<link rel="stylesheet" href="css/style.css">
 	</head>
-	<body>
+
+	<body data-spy="scroll" data-target=".header-navbar" data-offset="50">
 		<div class="main-wrapper">
-			<header class="header">
+			<!-- HEADER -->
+			<header id="header" class="header">
+				<!-- NAVBAR -->
 				<nav class="header-navbar">
-					NavBar goes here
+					<div class="navbar-header">
+						<a class="navbar-brand js-scrollTo" href="#header">
+							<span class="glyphicon glyphicon-user"></span>
+						</a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<!-- LEFT SIDE  -->
+						<ul class="header-navbar-list">
+							<li><a class="js-scrollTo" href="#about">About</a></li>
+							<li><a class="js-scrollTo" href="#work">Work</a></li>
+							<li><a class="js-scrollTo" href="#skills">Skills</a></li>
+							<li><a class="js-scrollTo" href="#contact">Contact</a></li>
+						</ul>
+						<!-- RIGHT SIDE  -->
+						<ul class="header-navbar-list navbar-right">
+							<li class="header-navbar-logo">
+								<a href="https://www.facebook.com/OussamaAbderrahim13">
+									<span class="fa fa-facebook-official"></span>
+								</a>	
+							</li>
+							<li class="header-navbar-logo">
+								<a href="https://twitter.com/sakasakyray">
+									<span class="fa fa-twitter"></span>
+								</a>									
+							</li>
+							<li class="header-navbar-logo">
+								<a href="https://www.freecodecamp.com/sakasaky">
+									<span class="fa fa-free-code-camp"></span>
+								</a>									
+							</li>
+							<li class="header-navbar-logo">
+								<a href="https://github.com/Sakasaky">
+									<span class="fa fa-github"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
 				</nav>
-				<div class="welcome-text">
-					<h2>Hi,</h2>
+				<div class="header-text">
+					<h2><strong>Hi,</strong></h2>
 					<h2>I'm Abderrahim Oussama</h2>
 					<h2>A Fired Up Full Stack Developper !</h2>
 				</div>
-				<button class="btn btn-resume">
-				Download Resume
-				</button>
+				<button class="btn btn-resume" 
+				onclick="alert('Coming Soon');">Download Resume</button>
 				
 				<img class ="face-img" src="img/face.jpg" alt="My face">
 			</header>
+			<!-- END OF HEADER -->
+			<!-- MAIN CONTENT -->
 			<div class="sections-wrapper">
 				<!-- ABOUT  -->
-				<section class="section about">
+				<section id="about" class="section about">
 					<h2 class="section-title">About Me</h2>
 					<hr>
 					<div class="about-text">
@@ -56,7 +99,7 @@
 				</section>
 				<!-- END OF ABOUT -->
 				<!-- WORK -->
-				<section class="section work">
+				<section id="work" class="section work">
 					<h2 class="section-title">My Work</h2>
 					<hr>
 
@@ -73,7 +116,7 @@
 						</li>
 					</ul>
 				
-					<div class="tab-content">
+					<div class="work-content">
 						<div id="work-web" class="work-tab active">
 							<a class="project-thumb">
 								<img src="http://via.placeholder.com/300x150" alt="project preview">
@@ -170,7 +213,7 @@
 				</section>
 				<!-- END OF WORK -->
 				<!-- SKILLS -->
-				<section class="section skills">
+				<section id="skills" class="section skills">
 					<h2 class="section-title">My Skills</h2>
 					<hr>
 					
@@ -251,8 +294,9 @@
 				</section>
 				<!-- END OF SKILLS -->
 			</div>
+			<!-- END OF MAIN CONTENT -->
 			<!-- CONTACT -->
-			<footer class="footer contact">
+			<section id = "contact" class="contact">
 				<ul class="contact-links">
 					<li class="contact-item">
 						<a href="https://www.facebook.com/OussamaAbderrahim13" class="fa fa-facebook"></a>
@@ -282,7 +326,28 @@
 						<a href="https://github.com/Sakasaky" class="fa fa-github"></a>
 					</li>
 				</ul>
+
+				<div class="contact-form">
+					<form action="">
+						<input type="text">
+					</form>
+				</div>
+			</section>
+
+			<footer class="footer">
+			© Oussama Abderrahim. Last Update - August 2017
 			</footer>
-		</div>
+		</div> <!-- end main-wrapper -->
 	</body>
+
+	<script>
+	$(document).ready(function() {
+		$('.js-scrollTo').on('click', function() {
+			var page = $(this).attr('href'); // get target page
+			var speed = 750;				// time in ms 
+			$('html, body').animate({scrollTop: $(page).offset().top}, speed); //scroll
+				return false; 
+		});
+	});
+	</script>
 </html>
