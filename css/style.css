@@ -2249,11 +2249,11 @@ hr { border: 0; border-top: 1px solid #eee; width: 90%; box-shadow: 2px 2px 5px 
 .skills-list { align-content: center; list-style-type: none; padding: 0 30px; }
 
 .skill-list-item { width: 200px; height: 200px; margin: 10px auto; }
-.skill-list-item img { padding: 20px auto; width: 50%; -webkit-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
+.skill-list-item img { margin: 20px auto; width: 50%; -webkit-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
 .skill-list-item img:hover { margin: 10px auto; width: 55%; }
 .skill-list-item a { text-decoration: none; }
 
-.contact { align-content: center; width: 100%; margin: auto; padding: 0 100px; background-color: lightblue; }
+.contact { align-content: center; width: 100%; margin: auto; padding: 0 100px; background-color: rgba(10, 20, 55, 0.75); }
 
 .contact-text { color: white; }
 
